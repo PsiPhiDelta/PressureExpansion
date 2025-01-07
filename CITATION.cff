@@ -5,6 +5,8 @@ authors:
     given-names: Hosein
     orcid: https://orcid.org/0009-0003-3194-926X
 title: "Mean-field symblolic pressure expansion coeffcicients"
+licence: MIT
+url: "https://github.com/PsiPhiDelta/PressureExpansion.git"
 version: 1.0.0
 identifiers:
 date-released: 2025-01-07
