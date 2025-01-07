@@ -21,7 +21,7 @@ These files are complementary to the paper and provides detailed insights and mi
 ## Usage
 1. Open the notebook `symbolic_pressure_derivatives.nb` in Mathematica.
 2. Follow the instructions in the file to compute specific pressure derivatives for your chosen model.
-3. For the two-flavor NJL model, refer to the `two_flavor_njl_calculations.nb` file for the detailed derivations and computations.
+3. For the two-flavor NJL model, refer to the `NJL-2f.nb` file for the detailed derivations and computations.
 4. Customize the symbolic framework for additional constraints or parameters as needed.
 
 ## Author
