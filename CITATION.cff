@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Gholami
+    given-names: Hosein
+    orcid: https://orcid.org/0009-0003-3194-926X
+title: "Mean-field symblolic pressure expansion coeffcicients"
+version: 1.0.0
+identifiers:
+date-released: 2025-01-07
