@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[    197539,       4778]
-NotebookOptionsPosition[    192525,       4681]
-NotebookOutlinePosition[    192967,       4698]
-CellTagsIndexPosition[    192924,       4695]
+NotebookDataLength[    194985,       4866]
+NotebookOptionsPosition[    189568,       4763]
+NotebookOutlinePosition[    190010,       4780]
+CellTagsIndexPosition[    189967,       4777]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -95,7 +95,8 @@ Cell[BoxData[
    3.942416925816477*^9, 3.9424169351084404`*^9}, {3.9424170927118597`*^9, 
    3.942417096166945*^9}, {3.942417144591638*^9, 3.942417151678485*^9}, {
    3.9452306573537083`*^9, 3.9452306581406727`*^9}, 3.945230701745968*^9},
- CellLabel->"In[63]:=",ExpressionUUID->"e56871cd-d62c-4abd-87c5-cb75bcd13b76"],
+ CellLabel->
+  "In[391]:=",ExpressionUUID->"e56871cd-d62c-4abd-87c5-cb75bcd13b76"],
 
 Cell[BoxData[
  RowBox[{
@@ -177,163 +178,8 @@ Cell[BoxData[
    3.942403576628058*^9, 3.9424035823064613`*^9}, 3.94240385187024*^9, {
    3.942417098915271*^9, 3.942417124759058*^9}, {3.945230709535392*^9, 
    3.945230723429644*^9}},
- CellLabel->"In[61]:=",ExpressionUUID->"9edd38b3-883f-4f76-980e-ab2476a20413"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"(*", 
-   RowBox[{
-    RowBox[{"Define", " ", "c_", 
-     RowBox[{"{", 
-      RowBox[{"1", ",", "0"}], "}"}]}], " ", ",", " ", 
-    RowBox[{"c_", 
-     RowBox[{"{", 
-      RowBox[{"0", ",", "1"}], "}"}], " ", "symbolically"}]}], "*)"}], 
-  "\[IndentingNewLine]", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"tildec10", "[", 
-     RowBox[{"T_", ",", "mu_", ",", "chi_"}], "]"}], ":=", 
-    RowBox[{"D", "[", 
-     RowBox[{
-      RowBox[{"OmegaEff", "[", 
-       RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], ",", "T"}], "]"}]}], "\n", 
-   RowBox[{
-    RowBox[{"tildec01", "[", 
-     RowBox[{"T_", ",", "mu_", ",", "chi_"}], "]"}], ":=", 
-    RowBox[{"D", "[", 
-     RowBox[{
-      RowBox[{"OmegaEff", "[", 
-       RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], ",", "mu"}], "]"}]}], 
-   "\[IndentingNewLine]", 
-   RowBox[{"(*", 
-    RowBox[{
-    "and", " ", "the", " ", "rest", " ", "can", " ", "be", " ", "defined", 
-     " ", "recursively"}], "*)"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"tildec11", "[", 
-     RowBox[{"T_", ",", "mu_", ",", "chi_"}], "]"}], ":=", 
-    RowBox[{"Collect", "[", 
-     RowBox[{
-      RowBox[{"FullSimplify", "[", 
-       RowBox[{
-        RowBox[{"J1Scalar", "[", 
-         RowBox[{"tildec01", ",", "OmegaEff", ",", "T", ",", "chi"}], "]"}], 
-        "/", 
-        RowBox[{"J2Scalar", "[", 
-         RowBox[{"OmegaEff", ",", "chi"}], "]"}]}], "]"}], ",", 
-      RowBox[{"{", 
-       RowBox[{
-        SuperscriptBox["\[CapitalOmega]Eff", 
-         TagBox[
-          RowBox[{"(", 
-           RowBox[{"0", ",", "0", ",", "2"}], ")"}],
-          Derivative],
-         MultilineFunction->None], "[", 
-        RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "}"}], ",", 
-      "FullSimplify"}], "]"}]}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"tildec02", "[", 
-     RowBox[{"T_", ",", "mu_", ",", "chi_"}], "]"}], ":=", 
-    RowBox[{"Collect", "[", 
-     RowBox[{
-      RowBox[{"FullSimplify", "[", 
-       RowBox[{
-        RowBox[{"J1Scalar", "[", 
-         RowBox[{"tildec01", ",", "OmegaEff", ",", "mu", ",", "chi"}], "]"}], 
-        "/", 
-        RowBox[{"J2Scalar", "[", 
-         RowBox[{"OmegaEff", ",", "chi"}], "]"}]}], "]"}], ",", 
-      RowBox[{"{", 
-       RowBox[{
-        SuperscriptBox["\[CapitalOmega]Eff", 
-         TagBox[
-          RowBox[{"(", 
-           RowBox[{"0", ",", "0", ",", "2"}], ")"}],
-          Derivative],
-         MultilineFunction->None], "[", 
-        RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "}"}], ",", 
-      "FullSimplify"}], "]"}]}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"tildec20", "[", 
-     RowBox[{"T_", ",", "mu_", ",", "chi_"}], "]"}], ":=", 
-    RowBox[{"Collect", "[", 
-     RowBox[{
-      RowBox[{"FullSimplify", "[", 
-       RowBox[{
-        RowBox[{"J1Scalar", "[", 
-         RowBox[{"tildec10", ",", "OmegaEff", ",", "T", ",", "chi"}], "]"}], 
-        "/", 
-        RowBox[{"J2Scalar", "[", 
-         RowBox[{"OmegaEff", ",", "chi"}], "]"}]}], "]"}], ",", 
-      RowBox[{"{", 
-       RowBox[{
-        SuperscriptBox["\[CapitalOmega]Eff", 
-         TagBox[
-          RowBox[{"(", 
-           RowBox[{"0", ",", "0", ",", "2"}], ")"}],
-          Derivative],
-         MultilineFunction->None], "[", 
-        RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "}"}], ",", 
-      "FullSimplify"}], "]"}]}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"tildec30", "[", 
-     RowBox[{"T_", ",", "mu_", ",", "chi_"}], "]"}], ":=", 
-    RowBox[{"Collect", "[", 
-     RowBox[{
-      RowBox[{"FullSimplify", "[", 
-       RowBox[{
-        RowBox[{"J1Scalar", "[", 
-         RowBox[{"tildec20", ",", "OmegaEff", ",", "T", ",", "chi"}], "]"}], 
-        "/", 
-        RowBox[{"J2Scalar", "[", 
-         RowBox[{"OmegaEff", ",", "chi"}], "]"}]}], "]"}], ",", 
-      RowBox[{"{", 
-       RowBox[{
-        SuperscriptBox["\[CapitalOmega]Eff", 
-         TagBox[
-          RowBox[{"(", 
-           RowBox[{"0", ",", "0", ",", "2"}], ")"}],
-          Derivative],
-         MultilineFunction->None], "[", 
-        RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "}"}], ",", 
-      "FullSimplify"}], "]"}]}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"tildec40", "[", 
-     RowBox[{"T_", ",", "mu_", ",", "chi_"}], "]"}], ":=", 
-    RowBox[{"Collect", "[", 
-     RowBox[{
-      RowBox[{"FullSimplify", "[", 
-       RowBox[{
-        RowBox[{"J1Scalar", "[", 
-         RowBox[{"tildec30", ",", "OmegaEff", ",", "T", ",", "chi"}], "]"}], 
-        "/", 
-        RowBox[{"J2Scalar", "[", 
-         RowBox[{"OmegaEff", ",", "chi"}], "]"}]}], "]"}], ",", 
-      RowBox[{"{", 
-       RowBox[{
-        SuperscriptBox["\[CapitalOmega]Eff", 
-         TagBox[
-          RowBox[{"(", 
-           RowBox[{"0", ",", "0", ",", "2"}], ")"}],
-          Derivative],
-         MultilineFunction->None], "[", 
-        RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "}"}], ",", 
-      "FullSimplify"}], "]"}]}]}]}]], "Input",
- InitializationCell->True,
- CellChangeTimes->{{3.942403000333829*^9, 3.942403030816051*^9}, {
-   3.9424032111436663`*^9, 3.942403333290056*^9}, {3.942403862443*^9, 
-   3.94240392566341*^9}, {3.9424044631809063`*^9, 3.942404485649981*^9}, 
-   3.9424045662116003`*^9, {3.9424046984349813`*^9, 3.942404698644508*^9}, 
-   3.942415433681074*^9, {3.942415473547921*^9, 3.9424154789197803`*^9}, {
-   3.942415535333421*^9, 3.9424156102122107`*^9}, {3.942415689682428*^9, 
-   3.942415707882637*^9}, {3.942415953873932*^9, 3.9424159633234644`*^9}, {
-   3.9424160769285307`*^9, 3.942416085268016*^9}, {3.942416511713449*^9, 
-   3.942416585284529*^9}, {3.942417155521845*^9, 3.94241718178538*^9}, {
-   3.942417244282914*^9, 3.942417254400783*^9}, {3.942417373259096*^9, 
-   3.942417383639689*^9}, {3.942417475741147*^9, 3.942417568600232*^9}},
  CellLabel->
-  "In[153]:=",ExpressionUUID->"4b5fcff5-a4b3-4751-9053-02a94a8c7607"]
+  "In[393]:=",ExpressionUUID->"9edd38b3-883f-4f76-980e-ab2476a20413"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -554,6 +400,7 @@ Cell[BoxData[{
      RowBox[{"mu", "->", "\[Mu]"}], ",", 
      RowBox[{"chi", "->", "\[Chi]"}]}], "}"}]}], 
   ";"}], "\[IndentingNewLine]"}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.9453150091559143`*^9, 3.9453151796417933`*^9}, {
   3.9453152152578897`*^9, 3.945315243814856*^9}, {3.9453152790774107`*^9, 
   3.945315361480259*^9}, {3.945315952796124*^9, 3.94531609374858*^9}, {
@@ -566,588 +413,18 @@ Cell[BoxData[{
   3.945317103738236*^9, 3.945317172897509*^9}, {3.9453173838953238`*^9, 
   3.94531747129729*^9}},
  CellLabel->
-  "In[175]:=",ExpressionUUID->"eea0c2bf-e227-4e61-a951-83f80fc97cbc"],
-
-Cell[BoxData[
- RowBox[{
-  RowBox[{"(*", 
-   RowBox[{"(*", 
-    RowBox[{"Define", " ", "the", " ", "transformation", " ", "rule"}], 
-    "*)"}], "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"derivativeRule", "=", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"1", ",", "0", ",", "0"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(T\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"0", ",", "1", ",", "0"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(\[Mu]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"0", ",", "1", ",", "1"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(\[Mu]\)]\)\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], 
-       ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"1", ",", "0", ",", "1"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[\(\[PartialD]\), \(T\)]\)\!\(\*SubscriptBox[\
-\(\[PartialD]\), \(\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\
-\)]\))\>\""}], ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"1", ",", "1", ",", "0"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[\(\[PartialD]\), \(T\)]\)\!\(\*SubscriptBox[\
-\(\[PartialD]\), \(\[Mu]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \
-\(eff\)]\))\>\""}], ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"0", ",", "0", ",", "2"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(\[Chi]\)]\)\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], 
-       ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"2", ",", "0", ",", "0"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(2\)], \
-\(T\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"0", ",", "2", ",", "0"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(2\)], \(\
-\[Mu]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"0", ",", "0", ",", "3"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(3\)], \(\
-\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], ",", 
-       
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"1", ",", "0", ",", "2"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(T\)]\)\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(2\)], \
-\(\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], 
-       ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"2", ",", "0", ",", "1"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(2\)], \
-\(T\)]\)\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], 
-       ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"3", ",", "0", ",", "0"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(3\)], \
-\(T\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"3", ",", "0", ",", "1"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(3\)], \
-\(T\)]\)\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], 
-       ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"1", ",", "0", ",", "3"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[\(\[PartialD]\), \
-\(T\)]\)\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(3\)], \
-\(\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], 
-       ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"2", ",", "0", ",", "2"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(2\)], \
-\(T\)]\)\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(2\)], \
-\(\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], 
-       ",", 
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"0", ",", "0", ",", "4"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(4\)], \(\
-\[Chi]\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}], ",", 
-       
-       RowBox[{
-        RowBox[{
-         SuperscriptBox["\[CapitalOmega]Eff", 
-          TagBox[
-           RowBox[{"(", 
-            RowBox[{"4", ",", "0", ",", "0"}], ")"}],
-           Derivative],
-          MultilineFunction->None], "[", 
-         RowBox[{"T", ",", "\[Mu]", ",", "\[Chi]"}], "]"}], "->", 
-        "\"\<(\!\(\*SubscriptBox[SuperscriptBox[\(\[PartialD]\), \(4\)], \
-\(T\)]\)\!\(\*SuperscriptBox[\(\[CapitalOmega]\), \(eff\)]\))\>\""}]}], 
-      "}"}]}], ";"}], "*)"}], "\[IndentingNewLine]"}]], "Input",
- CellChangeTimes->{{3.942418577602182*^9, 3.942418613549309*^9}, {
-   3.942418714013771*^9, 3.942418727533578*^9}, {3.942419153279638*^9, 
-   3.942419194141449*^9}, {3.942419240777412*^9, 3.942419279247538*^9}, {
-   3.942419384974373*^9, 3.942419417225216*^9}, {3.942419643389636*^9, 
-   3.942419685380643*^9}, 3.9424197330277157`*^9, {3.94241978472389*^9, 
-   3.942420090359685*^9}, {3.942420136448815*^9, 3.942420358309703*^9}, {
-   3.945317381916704*^9, 
-   3.945317389388117*^9}},ExpressionUUID->"57f76ae5-76ac-45e2-95e0-\
-fabc880e0564"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{
-   RowBox[{"tildec10", "[", 
-    RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", "greekRule"}], "/.", 
-  "derivativeRule"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"tildec01", "[", 
-    RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", "greekRule"}], "/.", 
-  "derivativeRule"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"tildec11", "[", 
-    RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", "greekRule"}], "/.", 
-  "derivativeRule"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"tildec02", "[", 
-    RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", "greekRule"}], "/.", 
-  "derivativeRule"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"tildec20", "[", 
-    RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", "greekRule"}], "/.", 
-  "derivativeRule"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"tildec30", "[", 
-    RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", "greekRule"}], "/.", 
-  "derivativeRule"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"tildec40", "[", 
-    RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", "greekRule"}], "/.", 
-  "derivativeRule"}]}], "Input",
- CellChangeTimes->{{3.942416775627771*^9, 3.942416828249785*^9}, {
-   3.942417190920949*^9, 3.942417207504805*^9}, {3.9424176482341437`*^9, 
-   3.942417675763537*^9}, {3.9424177215004396`*^9, 3.942417731867052*^9}, {
-   3.942417976387079*^9, 3.9424180077858963`*^9}, {3.942418619187942*^9, 
-   3.94241863855499*^9}, {3.942418692850258*^9, 3.942418694214464*^9}, {
-   3.942419295470405*^9, 3.942419301368992*^9}, {3.942419336498015*^9, 
-   3.9424193380471687`*^9}, {3.942419488305318*^9, 3.942419501610975*^9}, {
-   3.9424195351974897`*^9, 3.9424195992359447`*^9}, {3.942419698932698*^9, 
-   3.9424197117131023`*^9}, {3.945314823585732*^9, 3.9453148458978453`*^9}, {
-   3.945315367170589*^9, 3.945315384441621*^9}, 3.945315443121008*^9, {
-   3.94531717754209*^9, 3.9453171782856894`*^9}},
- CellLabel->
-  "In[146]:=",ExpressionUUID->"1fe3bd0f-a23b-4d07-844c-37cf91df4012"],
-
-Cell[BoxData["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\\)\\!\\(\
-\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\"\>"], "Output",
- CellChangeTimes->{{3.942419712752045*^9, 3.942419738363266*^9}, {
-   3.942419807140933*^9, 3.942419852857366*^9}, 3.9424199361583138`*^9, 
-   3.9424199851420107`*^9, 3.942420016334538*^9, 3.942420092870437*^9, 
-   3.942420202427341*^9, 3.942420235116901*^9, {3.942420271349498*^9, 
-   3.942420309565346*^9}, 3.94242036186413*^9, 3.945233053124058*^9, {
-   3.945314820958301*^9, 3.945314846312231*^9}, {3.945315368863703*^9, 
-   3.9453153871754208`*^9}, {3.9453154199310007`*^9, 3.945315443495531*^9}, 
-   3.9453154737089863`*^9, 3.9453156317892237`*^9, {3.9453171448716908`*^9, 
-   3.945317178846418*^9}},
- CellLabel->
-  "Out[146]=",ExpressionUUID->"5bfff684-e0c5-475c-97d0-dee7572749d7"],
-
-Cell[BoxData["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Mu]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>"], "Output",
- CellChangeTimes->{{3.942419712752045*^9, 3.942419738363266*^9}, {
-   3.942419807140933*^9, 3.942419852857366*^9}, 3.9424199361583138`*^9, 
-   3.9424199851420107`*^9, 3.942420016334538*^9, 3.942420092870437*^9, 
-   3.942420202427341*^9, 3.942420235116901*^9, {3.942420271349498*^9, 
-   3.942420309565346*^9}, 3.94242036186413*^9, 3.945233053124058*^9, {
-   3.945314820958301*^9, 3.945314846312231*^9}, {3.945315368863703*^9, 
-   3.9453153871754208`*^9}, {3.9453154199310007`*^9, 3.945315443495531*^9}, 
-   3.9453154737089863`*^9, 3.9453156317892237`*^9, {3.9453171448716908`*^9, 
-   3.9453171788493557`*^9}},
- CellLabel->
-  "Out[147]=",ExpressionUUID->"d82284e9-d7a9-409b-b9d6-3ea8fe60fbcf"],
-
-Cell[BoxData[
- RowBox[{"\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Mu]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", "-", 
-  FractionBox[
-   RowBox[{"\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(\[Mu]\\)]\\)\\!\
-\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"}], "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"]}]], "Output",
- CellChangeTimes->{{3.942419712752045*^9, 3.942419738363266*^9}, {
-   3.942419807140933*^9, 3.942419852857366*^9}, 3.9424199361583138`*^9, 
-   3.9424199851420107`*^9, 3.942420016334538*^9, 3.942420092870437*^9, 
-   3.942420202427341*^9, 3.942420235116901*^9, {3.942420271349498*^9, 
-   3.942420309565346*^9}, 3.94242036186413*^9, 3.945233053124058*^9, {
-   3.945314820958301*^9, 3.945314846312231*^9}, {3.945315368863703*^9, 
-   3.9453153871754208`*^9}, {3.9453154199310007`*^9, 3.945315443495531*^9}, 
-   3.9453154737089863`*^9, 3.9453156317892237`*^9, {3.9453171448716908`*^9, 
-   3.945317178851235*^9}},
- CellLabel->
-  "Out[148]=",ExpressionUUID->"7328c9c3-d65b-46ee-97f3-266d9b50cb92"],
-
-Cell[BoxData[
- RowBox[{"\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(2\\)], \\(\[Mu]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", "-", 
-  FractionBox[
-   SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(\[Mu]\\)]\
-\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "2"], "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"]}]], "Output",
- CellChangeTimes->{{3.942419712752045*^9, 3.942419738363266*^9}, {
-   3.942419807140933*^9, 3.942419852857366*^9}, 3.9424199361583138`*^9, 
-   3.9424199851420107`*^9, 3.942420016334538*^9, 3.942420092870437*^9, 
-   3.942420202427341*^9, 3.942420235116901*^9, {3.942420271349498*^9, 
-   3.942420309565346*^9}, 3.94242036186413*^9, 3.945233053124058*^9, {
-   3.945314820958301*^9, 3.945314846312231*^9}, {3.945315368863703*^9, 
-   3.9453153871754208`*^9}, {3.9453154199310007`*^9, 3.945315443495531*^9}, 
-   3.9453154737089863`*^9, 3.9453156317892237`*^9, {3.9453171448716908`*^9, 
-   3.945317178853463*^9}},
- CellLabel->
-  "Out[149]=",ExpressionUUID->"b882583c-c01b-4527-b79c-3bec6f07353e"],
-
-Cell[BoxData[
- RowBox[{"\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(2\\)], \\(T\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", "-", 
-  FractionBox[
-   SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "2"], "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"]}]], "Output",
- CellChangeTimes->{{3.942419712752045*^9, 3.942419738363266*^9}, {
-   3.942419807140933*^9, 3.942419852857366*^9}, 3.9424199361583138`*^9, 
-   3.9424199851420107`*^9, 3.942420016334538*^9, 3.942420092870437*^9, 
-   3.942420202427341*^9, 3.942420235116901*^9, {3.942420271349498*^9, 
-   3.942420309565346*^9}, 3.94242036186413*^9, 3.945233053124058*^9, {
-   3.945314820958301*^9, 3.945314846312231*^9}, {3.945315368863703*^9, 
-   3.9453153871754208`*^9}, {3.9453154199310007`*^9, 3.945315443495531*^9}, 
-   3.9453154737089863`*^9, 3.9453156317892237`*^9, {3.9453171448716908`*^9, 
-   3.945317178855331*^9}},
- CellLabel->
-  "Out[150]=",ExpressionUUID->"1a2e46e5-9911-404d-9b60-00717e97c9e7"],
-
-Cell[BoxData[
- RowBox[{"\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(3\\)], \\(T\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", "-", 
-  FractionBox[
-   RowBox[{"\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \\(3\
-\\)], \\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", " ", 
-    SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\\)\
-\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "3"]}], 
-   SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "3"]], "+", 
-  FractionBox[
-   RowBox[{
-   "3", " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\\)\\!\\(\
-\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \\(2\\)], \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", " ", 
-    SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\\)\
-\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "2"]}], 
-   SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "2"]], "-", 
-  FractionBox[
-   RowBox[{
-   "3", " ", "\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(2\\)], \\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"}], "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"]}]], "Output",
- CellChangeTimes->{{3.942419712752045*^9, 3.942419738363266*^9}, {
-   3.942419807140933*^9, 3.942419852857366*^9}, 3.9424199361583138`*^9, 
-   3.9424199851420107`*^9, 3.942420016334538*^9, 3.942420092870437*^9, 
-   3.942420202427341*^9, 3.942420235116901*^9, {3.942420271349498*^9, 
-   3.942420309565346*^9}, 3.94242036186413*^9, 3.945233053124058*^9, {
-   3.945314820958301*^9, 3.945314846312231*^9}, {3.945315368863703*^9, 
-   3.9453153871754208`*^9}, {3.9453154199310007`*^9, 3.945315443495531*^9}, 
-   3.9453154737089863`*^9, 3.9453156317892237`*^9, {3.9453171448716908`*^9, 
-   3.9453171788571997`*^9}},
- CellLabel->
-  "Out[151]=",ExpressionUUID->"8675f96d-265a-4e7c-ad10-10fd581fff48"],
-
-Cell[BoxData[
- RowBox[{"\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(4\\)], \\(T\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", "-", 
-  FractionBox[
-   RowBox[{"3", " ", 
-    SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\\
-), \\(3\\)], \\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", "2"], " ", 
-    SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\\)\
-\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "4"]}], 
-   SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "5"]], "+", 
-  FractionBox[
-   RowBox[{
-    SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\\)\
-\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "3"], " ", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{
-      "12", " ", \
-"\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \\(3\\)], \\(\
-\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", 
-       " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \\(2\\)], \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"}], "+", 
-      RowBox[{"\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(4\\)], \\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", 
-       " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"}]}], ")"}]}], 
-   SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "4"]], "-", 
-  FractionBox[
-   RowBox[{"2", " ", 
-    SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\\)\
-\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "2"], " ", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{
-      "3", " ", "\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(2\\)], \\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", " ", "\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(3\\)], \\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>"}], "+", 
-      RowBox[{"6", " ", 
-       SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\
-\\)\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \\(2\\)], \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "2"]}], "+", 
-      RowBox[{
-      "2", " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\\)\\!\
-\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \\(3\\)], \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"}]}], ")"}]}], 
-   SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "3"]], "+", 
-  FractionBox[
-   RowBox[{
-   "6", " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(T\\)]\\)\\!\\(\
-\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", " ", 
-    RowBox[{"(", 
-     RowBox[{
-      RowBox[{
-      "2", " ", "\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(2\\)], \\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \\(2\\)], \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"}], "+", 
-      RowBox[{"\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(2\\)], \\(T\\)]\\)\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(2\\)], \\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \
-\\(eff\\)]\\))\"\>", 
-       " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"}]}], ")"}]}], 
-   SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "2"]], "+", 
-  FractionBox[
-   RowBox[{
-    RowBox[{
-     RowBox[{"-", "3"}], " ", 
-     SuperscriptBox["\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\
-\\), \\(2\\)], \\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", "2"]}], "-", 
-    RowBox[{
-    "4", " ", "\<\"(\\!\\(\\*SubscriptBox[SuperscriptBox[\\(\[PartialD]\\), \
-\\(3\\)], \\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>", " ", "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(T\\)]\\)\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"}]}], "\<\"(\\!\\(\\*SubscriptBox[\\(\[PartialD]\\), \\(\[Chi]\\)]\\)\\!\
-\\(\\*SubscriptBox[\\(\[PartialD]\\), \
-\\(\[Chi]\\)]\\)\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\))\
-\"\>"]}]], "Output",
- CellChangeTimes->{{3.942419712752045*^9, 3.942419738363266*^9}, {
-   3.942419807140933*^9, 3.942419852857366*^9}, 3.9424199361583138`*^9, 
-   3.9424199851420107`*^9, 3.942420016334538*^9, 3.942420092870437*^9, 
-   3.942420202427341*^9, 3.942420235116901*^9, {3.942420271349498*^9, 
-   3.942420309565346*^9}, 3.94242036186413*^9, 3.945233053124058*^9, {
-   3.945314820958301*^9, 3.945314846312231*^9}, {3.945315368863703*^9, 
-   3.9453153871754208`*^9}, {3.9453154199310007`*^9, 3.945315443495531*^9}, 
-   3.9453154737089863`*^9, 3.9453156317892237`*^9, {3.9453171448716908`*^9, 
-   3.94531717886001*^9}},
- CellLabel->
-  "Out[152]=",ExpressionUUID->"3334186b-789f-49e0-841e-d21cfdb2ae0c"]
-}, Open  ]]
+  "In[395]:=",ExpressionUUID->"eea0c2bf-e227-4e61-a951-83f80fc97cbc"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
-Cell["For any arbitrary value of m and n, we write this function", "Item",
- CellChangeTimes->{{3.945233272779151*^9, 
-  3.945233321269021*^9}},ExpressionUUID->"d77cbfbd-c008-4ea9-91b6-\
+Cell["\<\
+For any arbitrary value of m and n, we write this function that autmoatize \
+this process\
+\>", "Item",
+ CellChangeTimes->{{3.945233272779151*^9, 3.945233321269021*^9}, {
+  3.945320213928678*^9, 
+  3.945320221620633*^9}},ExpressionUUID->"d77cbfbd-c008-4ea9-91b6-\
 a3ed3364e897"],
 
 Cell[BoxData[
@@ -1331,7 +608,812 @@ Cell[BoxData[
    3.945233190665759*^9}, {3.945233323809086*^9, 3.945233404129209*^9}, 
    3.9453154218636627`*^9, {3.9453157127155457`*^9, 3.945315746810563*^9}},
  CellLabel->
-  "In[177]:=",ExpressionUUID->"ccccaca5-5a8e-4b4c-9833-e27684ed7752"],
+  "In[397]:=",ExpressionUUID->"ccccaca5-5a8e-4b4c-9833-e27684ed7752"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Example usage: some coefficients including the ones in the paper:\
+\>", "Item",
+ CellChangeTimes->{{3.945320279733368*^9, 3.945320287731079*^9}, {
+   3.945320360457007*^9, 3.945320369023361*^9}, 
+   3.945320456630484*^9},ExpressionUUID->"9b40b5de-b8c9-46c0-9ec7-\
+a1ce058c854b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"tildeC", "[", 
+       RowBox[{"1", ",", "0"}], "]"}], "[", 
+      RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", " ", "greekRule"}], "/.",
+     " ", "derivativeRule"}], "\n", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"tildeC", "[", 
+       RowBox[{"0", ",", "1"}], "]"}], "[", 
+      RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", " ", "greekRule"}], "/.",
+     " ", "derivativeRule"}], "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", "\"\<second mixed derivative:\>\"", "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"tildeC", "[", 
+       RowBox[{"1", ",", "1"}], "]"}], "[", 
+      RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", " ", "greekRule"}], "/.",
+     " ", "derivativeRule"}], "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", "\"\<T derivatives: 2nd, 3rd and 4th\>\"", "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"tildeC", "[", 
+       RowBox[{"2", ",", "0"}], "]"}], "[", 
+      RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", " ", "greekRule"}], "/.",
+     " ", "derivativeRule"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"tildeC", "[", 
+       RowBox[{"3", ",", "0"}], "]"}], "[", 
+      RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", " ", "greekRule"}], "/.",
+     " ", "derivativeRule"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"tildeC", "[", 
+       RowBox[{"4", ",", "0"}], "]"}], "[", 
+      RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", " ", "greekRule"}], "/.",
+     " ", "derivativeRule"}], "\[IndentingNewLine]", 
+   RowBox[{"Print", "[", "\"\<\[Mu] derivatives: 2nd, 3rd and 4th\>\"", "]"}],
+    "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"tildeC", "[", 
+       RowBox[{"0", ",", "2"}], "]"}], "[", 
+      RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", " ", "greekRule"}], "/.",
+     " ", "derivativeRule"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"tildeC", "[", 
+       RowBox[{"0", ",", "3"}], "]"}], "[", 
+      RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", " ", "greekRule"}], "/.",
+     " ", "derivativeRule"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"tildeC", "[", 
+       RowBox[{"0", ",", "4"}], "]"}], "[", 
+      RowBox[{"T", ",", "mu", ",", "chi"}], "]"}], "/.", " ", "greekRule"}], "/.",
+     " ", "derivativeRule"}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.9453204649100437`*^9, 3.9453206823895817`*^9}},
+ CellLabel->
+  "In[461]:=",ExpressionUUID->"42f75f8d-e3a7-417d-ac2b-8b8a11961812"],
+
+Cell[BoxData[
+ TemplateBox[{"\"(\"", 
+   SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+   "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+   "\")\""},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.945320490281776*^9, 3.945320535340226*^9}, {
+  3.945320580704981*^9, 3.945320684191905*^9}},
+ CellLabel->
+  "Out[461]=",ExpressionUUID->"acd3547c-f12b-414d-a7a0-5ee2948435ce"],
+
+Cell[BoxData[
+ TemplateBox[{"\"(\"", 
+   SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+   "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+   "\")\""},
+  "RowDefault"]], "Output",
+ CellChangeTimes->{{3.945320490281776*^9, 3.945320535340226*^9}, {
+  3.945320580704981*^9, 3.945320684195603*^9}},
+ CellLabel->
+  "Out[462]=",ExpressionUUID->"6274ca33-5884-4d24-8aa6-4e1c518ca0bc"],
+
+Cell[BoxData["\<\"second mixed derivative:\"\>"], "Print",
+ CellChangeTimes->{{3.945320630479788*^9, 3.945320684198718*^9}},
+ CellLabel->
+  "During evaluation of \
+In[461]:=",ExpressionUUID->"2f23a0d8-2cfb-440f-a131-a299bb73645c"],
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"(\"", 
+    SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+    SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+    "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+    "\")\""},
+   "RowDefault"], "-", 
+  FractionBox[
+   RowBox[{
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], " ", 
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"]}], 
+   TemplateBox[{"\"(\"", 
+     SubscriptBox[
+      SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+     "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+     "\")\""},
+    "RowDefault"]]}]], "Output",
+ CellChangeTimes->{{3.945320490281776*^9, 3.945320535340226*^9}, {
+  3.945320580704981*^9, 3.945320684200921*^9}},
+ CellLabel->
+  "Out[464]=",ExpressionUUID->"5cbc4520-324c-46e7-b913-08631ce711a5"],
+
+Cell[BoxData["\<\"T derivatives: 2nd, 3rd and 4th\"\>"], "Print",
+ CellChangeTimes->{{3.945320630479788*^9, 3.945320684204729*^9}},
+ CellLabel->
+  "During evaluation of \
+In[461]:=",ExpressionUUID->"5523f2a6-2aaf-4344-bf7b-bdefcfce36a2"],
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"(\"", 
+    SubscriptBox[
+     SuperscriptBox["\"\[PartialD]\"", "2"], "\"T\""], 
+    "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+    "\")\""},
+   "RowDefault"], "-", 
+  FractionBox[
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "2"], 
+   TemplateBox[{"\"(\"", 
+     SubscriptBox[
+      SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+     "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+     "\")\""},
+    "RowDefault"]]}]], "Output",
+ CellChangeTimes->{{3.945320490281776*^9, 3.945320535340226*^9}, {
+  3.945320580704981*^9, 3.94532068420649*^9}},
+ CellLabel->
+  "Out[466]=",ExpressionUUID->"59ed793e-b7b5-4428-b2df-7b48313b139e"],
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"(\"", 
+    SubscriptBox[
+     SuperscriptBox["\"\[PartialD]\"", "3"], "\"T\""], 
+    "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+    "\")\""},
+   "RowDefault"], "-", 
+  FractionBox[
+   RowBox[{
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "3"]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "3"]], "+", 
+  FractionBox[
+   RowBox[{"3", " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "2"], " ", 
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "2"]], "-", 
+  FractionBox[
+   RowBox[{"3", " ", 
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], " ", 
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"T\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"]}], 
+   TemplateBox[{"\"(\"", 
+     SubscriptBox[
+      SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+     "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+     "\")\""},
+    "RowDefault"]]}]], "Output",
+ CellChangeTimes->{{3.945320490281776*^9, 3.945320535340226*^9}, {
+  3.945320580704981*^9, 3.945320684210038*^9}},
+ CellLabel->
+  "Out[467]=",ExpressionUUID->"d1a82a7c-965d-4fb6-870e-77ecff0bf850"],
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"(\"", 
+    SubscriptBox[
+     SuperscriptBox["\"\[PartialD]\"", "4"], "\"T\""], 
+    "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+    "\")\""},
+   "RowDefault"], "-", 
+  FractionBox[
+   RowBox[{"3", " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox[
+        SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "2"], " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "4"]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "5"]], "+", 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "3"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "4"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}], "+", 
+      RowBox[{"12", " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}]}], ")"}]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "4"]], "-", 
+  FractionBox[
+   RowBox[{"2", " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"6", " ", 
+       SuperscriptBox[
+        TemplateBox[{"\"(\"", 
+          SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+          SubscriptBox[
+           SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+          "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+          "\")\""},
+         "RowDefault"], "2"]}], "+", 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}], "+", 
+      RowBox[{"3", " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"T\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}]}], ")"}]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "3"]], "+", 
+  FractionBox[
+   RowBox[{"6", " ", 
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"T\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}], "+", 
+      RowBox[{
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"T\""], 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}]}], ")"}]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "2"]], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "3"}], " ", 
+     SuperscriptBox[
+      TemplateBox[{"\"(\"", 
+        SubscriptBox[
+         SuperscriptBox["\"\[PartialD]\"", "2"], "\"T\""], 
+        SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+        "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+        "\")\""},
+       "RowDefault"], "2"]}], "-", 
+    RowBox[{"4", " ", 
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"T\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], " ", 
+     TemplateBox[{"\"(\"", 
+       SubscriptBox[
+        SuperscriptBox["\"\[PartialD]\"", "3"], "\"T\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"]}]}], 
+   TemplateBox[{"\"(\"", 
+     SubscriptBox[
+      SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+     "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+     "\")\""},
+    "RowDefault"]]}]], "Output",
+ CellChangeTimes->{{3.945320490281776*^9, 3.945320535340226*^9}, {
+  3.945320580704981*^9, 3.945320684216877*^9}},
+ CellLabel->
+  "Out[468]=",ExpressionUUID->"c901b4d1-63cf-4641-aad1-8674922a635e"],
+
+Cell[BoxData["\<\"\[Mu] derivatives: 2nd, 3rd and 4th\"\>"], "Print",
+ CellChangeTimes->{{3.945320630479788*^9, 3.9453206842275753`*^9}},
+ CellLabel->
+  "During evaluation of \
+In[461]:=",ExpressionUUID->"f57aa657-cc2b-4cf8-9e45-7083ae3b15af"],
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"(\"", 
+    SubscriptBox[
+     SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Mu]\""], 
+    "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+    "\")\""},
+   "RowDefault"], "-", 
+  FractionBox[
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "2"], 
+   TemplateBox[{"\"(\"", 
+     SubscriptBox[
+      SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+     "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+     "\")\""},
+    "RowDefault"]]}]], "Output",
+ CellChangeTimes->{{3.945320490281776*^9, 3.945320535340226*^9}, {
+  3.945320580704981*^9, 3.945320684229086*^9}},
+ CellLabel->
+  "Out[470]=",ExpressionUUID->"748e7d32-cdd3-40b0-b822-c9aef8302046"],
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"(\"", 
+    SubscriptBox[
+     SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Mu]\""], 
+    "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+    "\")\""},
+   "RowDefault"], "-", 
+  FractionBox[
+   RowBox[{
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "3"]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "3"]], "+", 
+  FractionBox[
+   RowBox[{"3", " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "2"], " ", 
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "2"]], "-", 
+  FractionBox[
+   RowBox[{"3", " ", 
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], " ", 
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Mu]\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"]}], 
+   TemplateBox[{"\"(\"", 
+     SubscriptBox[
+      SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+     "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+     "\")\""},
+    "RowDefault"]]}]], "Output",
+ CellChangeTimes->{{3.945320490281776*^9, 3.945320535340226*^9}, {
+  3.945320580704981*^9, 3.945320684231738*^9}},
+ CellLabel->
+  "Out[471]=",ExpressionUUID->"1d998c1c-a491-4d14-87af-a365e03e8fed"],
+
+Cell[BoxData[
+ RowBox[{
+  TemplateBox[{"\"(\"", 
+    SubscriptBox[
+     SuperscriptBox["\"\[PartialD]\"", "4"], "\"\[Mu]\""], 
+    "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+    "\")\""},
+   "RowDefault"], "-", 
+  FractionBox[
+   RowBox[{"3", " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox[
+        SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "2"], " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "4"]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "5"]], "+", 
+  FractionBox[
+   RowBox[{
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "3"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "4"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}], "+", 
+      RowBox[{"12", " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}]}], ")"}]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "4"]], "-", 
+  FractionBox[
+   RowBox[{"2", " ", 
+    SuperscriptBox[
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"6", " ", 
+       SuperscriptBox[
+        TemplateBox[{"\"(\"", 
+          SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+          SubscriptBox[
+           SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+          "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+          "\")\""},
+         "RowDefault"], "2"]}], "+", 
+      RowBox[{"2", " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}], "+", 
+      RowBox[{"3", " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Mu]\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}]}], ")"}]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "3"]], "+", 
+  FractionBox[
+   RowBox[{"6", " ", 
+    TemplateBox[{"\"(\"", 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+      SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"2", " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Mu]\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}], "+", 
+      RowBox[{
+       TemplateBox[{"\"(\"", 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+         SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"], " ", 
+       TemplateBox[{"\"(\"", 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Mu]\""], 
+         SubscriptBox[
+          SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+         "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+         "\")\""},
+        "RowDefault"]}]}], ")"}]}], 
+   SuperscriptBox[
+    TemplateBox[{"\"(\"", 
+      SubscriptBox[
+       SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+      "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+      "\")\""},
+     "RowDefault"], "2"]], "+", 
+  FractionBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "3"}], " ", 
+     SuperscriptBox[
+      TemplateBox[{"\"(\"", 
+        SubscriptBox[
+         SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Mu]\""], 
+        SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+        "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+        "\")\""},
+       "RowDefault"], "2"]}], "-", 
+    RowBox[{"4", " ", 
+     TemplateBox[{"\"(\"", 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Mu]\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"], " ", 
+     TemplateBox[{"\"(\"", 
+       SubscriptBox[
+        SuperscriptBox["\"\[PartialD]\"", "3"], "\"\[Mu]\""], 
+       SubscriptBox["\"\[PartialD]\"", "\"\[Chi]\""], 
+       "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+       "\")\""},
+      "RowDefault"]}]}], 
+   TemplateBox[{"\"(\"", 
+     SubscriptBox[
+      SuperscriptBox["\"\[PartialD]\"", "2"], "\"\[Chi]\""], 
+     "\"\\!\\(\\*SuperscriptBox[\\(\[CapitalOmega]\\), \\(eff\\)]\\)\"", 
+     "\")\""},
+    "RowDefault"]]}]], "Output",
+ CellChangeTimes->{{3.945320490281776*^9, 3.945320535340226*^9}, {
+  3.945320580704981*^9, 3.945320684236154*^9}},
+ CellLabel->
+  "Out[472]=",ExpressionUUID->"4986ae79-e99a-4bb3-98a9-ca363852cc5c"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -4702,74 +4784,80 @@ Cell[CellGroupData[{
 Cell[1401, 42, 168, 3, 98, "Title",ExpressionUUID->"9f699dcc-de2b-4950-b710-41ae93ef7edc"],
 Cell[CellGroupData[{
 Cell[1594, 49, 179, 3, 32, "Item",ExpressionUUID->"cb76928a-e8c4-4833-acef-a38629c7c5ab"],
-Cell[1776, 54, 2151, 43, 131, "Input",ExpressionUUID->"e56871cd-d62c-4abd-87c5-cb75bcd13b76",
+Cell[1776, 54, 2155, 44, 131, "Input",ExpressionUUID->"e56871cd-d62c-4abd-87c5-cb75bcd13b76",
  InitializationCell->True],
-Cell[3930, 99, 2924, 80, 198, "Input",ExpressionUUID->"9edd38b3-883f-4f76-980e-ab2476a20413",
- InitializationCell->True],
-Cell[6857, 181, 5829, 154, 225, "Input",ExpressionUUID->"4b5fcff5-a4b3-4751-9053-02a94a8c7607",
+Cell[3934, 100, 2928, 81, 198, "Input",ExpressionUUID->"9edd38b3-883f-4f76-980e-ab2476a20413",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12723, 340, 184, 3, 32, "Item",ExpressionUUID->"3d99e38c-9e25-4447-8f69-7451f0a02518"],
-Cell[12910, 345, 8925, 223, 220, "Input",ExpressionUUID->"eea0c2bf-e227-4e61-a951-83f80fc97cbc"],
-Cell[21838, 570, 9132, 224, 121, "Input",ExpressionUUID->"57f76ae5-76ac-45e2-95e0-fabc880e0564"],
-Cell[CellGroupData[{
-Cell[30995, 798, 2083, 48, 157, "Input",ExpressionUUID->"1fe3bd0f-a23b-4d07-844c-37cf91df4012"],
-Cell[33081, 848, 841, 12, 35, "Output",ExpressionUUID->"5bfff684-e0c5-475c-97d0-dee7572749d7"],
-Cell[33925, 862, 849, 13, 37, "Output",ExpressionUUID->"d82284e9-d7a9-409b-b9d6-3ea8fe60fbcf"],
-Cell[34777, 877, 1529, 26, 63, "Output",ExpressionUUID->"7328c9c3-d65b-46ee-97f3-266d9b50cb92"],
-Cell[36309, 905, 1317, 22, 63, "Output",ExpressionUUID->"b882583c-c01b-4527-b79c-3bec6f07353e"],
-Cell[37629, 929, 1309, 22, 63, "Output",ExpressionUUID->"1a2e46e5-9911-404d-9b60-00717e97c9e7"],
-Cell[38941, 953, 2869, 52, 63, "Output",ExpressionUUID->"8675f96d-265a-4e7c-ad10-10fd581fff48"],
-Cell[41813, 1007, 6924, 134, 118, "Output",ExpressionUUID->"3334186b-789f-49e0-841e-d21cfdb2ae0c"]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[48786, 1147, 200, 3, 32, "Item",ExpressionUUID->"d77cbfbd-c008-4ea9-91b6-a3ed3364e897"],
-Cell[48989, 1152, 6753, 181, 383, "Input",ExpressionUUID->"ccccaca5-5a8e-4b4c-9833-e27684ed7752",
- InitializationCell->True],
-Cell[CellGroupData[{
-Cell[55767, 1337, 866, 21, 52, "Input",ExpressionUUID->"5a94d973-868d-4716-96c1-760b708dff32"],
-Cell[56636, 1360, 22284, 561, 283, "Output",ExpressionUUID->"04a49d8d-4ed2-464f-89fe-62d8cbbadc93"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[78957, 1926, 622, 17, 52, "Input",ExpressionUUID->"5f8f8735-affb-40d0-ac41-e6613734a49c"],
-Cell[79582, 1945, 4844, 124, 63, "Output",ExpressionUUID->"c1fa7f0e-4df6-40e9-a3a9-0b933d7c47f0"]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[84487, 2076, 297, 5, 98, "Title",ExpressionUUID->"907454b2-e421-fe41-8308-483d9ba5fa32"],
-Cell[CellGroupData[{
-Cell[84809, 2085, 228, 4, 32, "Item",ExpressionUUID->"70c92e70-034a-a340-90b9-11bf50fdd03f"],
-Cell[85040, 2091, 2938, 63, 152, "Input",ExpressionUUID->"49e99634-6b71-6d4e-a759-c87dbe38a643",
- InitializationCell->True],
-Cell[87981, 2156, 5395, 138, 301, "Input",ExpressionUUID->"280c194c-0654-d247-a8d9-cd193e37fff9",
- InitializationCell->True],
-Cell[93379, 2296, 9245, 243, 185, "Input",ExpressionUUID->"3b9c98e0-b034-7f46-8667-bae0805784d0",
+Cell[6899, 186, 184, 3, 32, "Item",ExpressionUUID->"3d99e38c-9e25-4447-8f69-7451f0a02518"],
+Cell[7086, 191, 8952, 224, 236, "Input",ExpressionUUID->"eea0c2bf-e227-4e61-a951-83f80fc97cbc",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[102661, 2544, 163, 3, 32, "Item",ExpressionUUID->"6ebf87a0-22db-47f4-a8fe-2ba0b3c2f9d4"],
-Cell[102827, 2549, 22300, 523, 951, "Input",ExpressionUUID->"7b02f4d0-d134-46cb-96ce-231af8d7083c",
+Cell[16075, 420, 288, 7, 32, "Item",ExpressionUUID->"d77cbfbd-c008-4ea9-91b6-a3ed3364e897"],
+Cell[16366, 429, 6753, 181, 383, "Input",ExpressionUUID->"ccccaca5-5a8e-4b4c-9833-e27684ed7752",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[125164, 3077, 163, 3, 32, "Item",ExpressionUUID->"7cb86926-7151-4627-9974-cb1347e79d6f"],
+Cell[23156, 615, 288, 6, 32, "Item",ExpressionUUID->"9b40b5de-b8c9-46c0-9ec7-a1ce058c854b"],
 Cell[CellGroupData[{
-Cell[125352, 3084, 1316, 32, 115, "Input",ExpressionUUID->"13218d8d-ab24-174e-8f39-0be55f0067f2"],
-Cell[126671, 3118, 718, 14, 35, "Output",ExpressionUUID->"fe414b59-ec1e-4472-bd15-c0e798bed112"],
-Cell[127392, 3134, 722, 14, 37, "Output",ExpressionUUID->"e7525543-1c44-4804-bf63-10b2bc9a8077"],
-Cell[128117, 3150, 3474, 87, 59, "Output",ExpressionUUID->"7348da57-2a86-47f2-9c32-91b905a89fd7"],
-Cell[131594, 3239, 4527, 111, 84, "Output",ExpressionUUID->"99314c36-b350-4e6a-a051-a15be9f83a2d"],
-Cell[136124, 3352, 3496, 87, 61, "Output",ExpressionUUID->"9e4b9ca7-e85b-4803-8e1d-7a5a4abb0042"]
+Cell[23469, 625, 2771, 74, 304, "Input",ExpressionUUID->"42f75f8d-e3a7-417d-ac2b-8b8a11961812"],
+Cell[26243, 701, 394, 9, 35, "Output",ExpressionUUID->"acd3547c-f12b-414d-a7a0-5ee2948435ce"],
+Cell[26640, 712, 398, 9, 37, "Output",ExpressionUUID->"6274ca33-5884-4d24-8aa6-4e1c518ca0bc"],
+Cell[27041, 723, 230, 4, 24, "Print",ExpressionUUID->"2f23a0d8-2cfb-440f-a131-a299bb73645c"],
+Cell[27274, 729, 1206, 31, 63, "Output",ExpressionUUID->"5cbc4520-324c-46e7-b913-08631ce711a5"],
+Cell[28483, 762, 237, 4, 24, "Print",ExpressionUUID->"5523f2a6-2aaf-4344-bf7b-bdefcfce36a2"],
+Cell[28723, 768, 941, 25, 63, "Output",ExpressionUUID->"59ed793e-b7b5-4428-b2df-7b48313b139e"],
+Cell[29667, 795, 2842, 77, 63, "Output",ExpressionUUID->"d1a82a7c-965d-4fb6-870e-77ecff0bf850"],
+Cell[32512, 874, 8059, 213, 118, "Output",ExpressionUUID->"c901b4d1-63cf-4641-aad1-8674922a635e"],
+Cell[40574, 1089, 243, 4, 24, "Print",ExpressionUUID->"f57aa657-cc2b-4cf8-9e45-7083ae3b15af"],
+Cell[40820, 1095, 950, 25, 63, "Output",ExpressionUUID->"748e7d32-cdd3-40b0-b822-c9aef8302046"],
+Cell[41773, 1122, 2866, 77, 63, "Output",ExpressionUUID->"1d998c1c-a491-4d14-87af-a365e03e8fed"],
+Cell[44642, 1201, 8131, 213, 141, "Output",ExpressionUUID->"4986ae79-e99a-4bb3-98a9-ca363852cc5c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[52810, 1419, 866, 21, 52, "Input",ExpressionUUID->"5a94d973-868d-4716-96c1-760b708dff32"],
+Cell[53679, 1442, 22284, 561, 252, "Output",ExpressionUUID->"04a49d8d-4ed2-464f-89fe-62d8cbbadc93"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[76000, 2008, 622, 17, 52, "Input",ExpressionUUID->"5f8f8735-affb-40d0-ac41-e6613734a49c"],
+Cell[76625, 2027, 4844, 124, 63, "Output",ExpressionUUID->"c1fa7f0e-4df6-40e9-a3a9-0b933d7c47f0"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[139669, 3445, 170, 3, 32, "Item",ExpressionUUID->"a1a8fa92-e899-4ea7-ba6e-1d010c045a98"],
+Cell[81530, 2158, 297, 5, 98, "Title",ExpressionUUID->"907454b2-e421-fe41-8308-483d9ba5fa32"],
 Cell[CellGroupData[{
-Cell[139864, 3452, 383, 9, 30, "Input",ExpressionUUID->"c1c56b12-1b30-4217-862e-25dd80ac50ec"],
-Cell[140250, 3463, 52235, 1213, 269, "Output",ExpressionUUID->"7e70320a-9385-4af4-9cf8-57ee0faaed58"]
+Cell[81852, 2167, 228, 4, 32, "Item",ExpressionUUID->"70c92e70-034a-a340-90b9-11bf50fdd03f"],
+Cell[82083, 2173, 2938, 63, 152, "Input",ExpressionUUID->"49e99634-6b71-6d4e-a759-c87dbe38a643",
+ InitializationCell->True],
+Cell[85024, 2238, 5395, 138, 301, "Input",ExpressionUUID->"280c194c-0654-d247-a8d9-cd193e37fff9",
+ InitializationCell->True],
+Cell[90422, 2378, 9245, 243, 185, "Input",ExpressionUUID->"3b9c98e0-b034-7f46-8667-bae0805784d0",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[99704, 2626, 163, 3, 32, "Item",ExpressionUUID->"6ebf87a0-22db-47f4-a8fe-2ba0b3c2f9d4"],
+Cell[99870, 2631, 22300, 523, 951, "Input",ExpressionUUID->"7b02f4d0-d134-46cb-96ce-231af8d7083c",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[122207, 3159, 163, 3, 32, "Item",ExpressionUUID->"7cb86926-7151-4627-9974-cb1347e79d6f"],
+Cell[CellGroupData[{
+Cell[122395, 3166, 1316, 32, 115, "Input",ExpressionUUID->"13218d8d-ab24-174e-8f39-0be55f0067f2"],
+Cell[123714, 3200, 718, 14, 35, "Output",ExpressionUUID->"fe414b59-ec1e-4472-bd15-c0e798bed112"],
+Cell[124435, 3216, 722, 14, 37, "Output",ExpressionUUID->"e7525543-1c44-4804-bf63-10b2bc9a8077"],
+Cell[125160, 3232, 3474, 87, 59, "Output",ExpressionUUID->"7348da57-2a86-47f2-9c32-91b905a89fd7"],
+Cell[128637, 3321, 4527, 111, 61, "Output",ExpressionUUID->"99314c36-b350-4e6a-a051-a15be9f83a2d"],
+Cell[133167, 3434, 3496, 87, 61, "Output",ExpressionUUID->"9e4b9ca7-e85b-4803-8e1d-7a5a4abb0042"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[136712, 3527, 170, 3, 32, "Item",ExpressionUUID->"a1a8fa92-e899-4ea7-ba6e-1d010c045a98"],
+Cell[CellGroupData[{
+Cell[136907, 3534, 383, 9, 30, "Input",ExpressionUUID->"c1c56b12-1b30-4217-862e-25dd80ac50ec"],
+Cell[137293, 3545, 52235, 1213, 269, "Output",ExpressionUUID->"7e70320a-9385-4af4-9cf8-57ee0faaed58"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
