@@ -3,10 +3,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[         0,          0]
-NotebookDataLength[    206487,       5166]
-NotebookOptionsPosition[    200512,       5054]
-NotebookOutlinePosition[    200954,       5071]
-CellTagsIndexPosition[    200911,       5068]
+NotebookDataLength[    219525,       5409]
+NotebookOptionsPosition[    212737,       5282]
+NotebookOutlinePosition[    213179,       5299]
+CellTagsIndexPosition[    213136,       5296]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2525,7 +2525,7 @@ Cell[BoxData[
    3.942659512523981*^9}, {3.942659893874916*^9, 3.942659899215252*^9}, {
    3.9452307809937696`*^9, 3.945230834889842*^9}},
  CellLabel->
-  "In[484]:=",ExpressionUUID->"49e99634-6b71-6d4e-a759-c87dbe38a643"],
+  "In[570]:=",ExpressionUUID->"49e99634-6b71-6d4e-a759-c87dbe38a643"],
 
 Cell[BoxData[
  RowBox[{
@@ -2665,7 +2665,7 @@ Cell[BoxData[
    3.942660126060911*^9, 3.9426601301315136`*^9}, {3.942660407513817*^9, 
    3.9426604156818314`*^9}, {3.942660579192869*^9, 3.9426605889737625`*^9}},
  CellLabel->
-  "In[486]:=",ExpressionUUID->"280c194c-0654-d247-a8d9-cd193e37fff9"],
+  "In[572]:=",ExpressionUUID->"280c194c-0654-d247-a8d9-cd193e37fff9"],
 
 Cell[BoxData[
  RowBox[{
@@ -2910,7 +2910,7 @@ Cell[BoxData[
    3.945319131863327*^9, 3.945319171085301*^9}, {3.945319229286997*^9, 
    3.945319234429076*^9}, {3.945319314534686*^9, 3.945319484675549*^9}},
  CellLabel->
-  "In[488]:=",ExpressionUUID->"3b9c98e0-b034-7f46-8667-bae0805784d0"]
+  "In[574]:=",ExpressionUUID->"3b9c98e0-b034-7f46-8667-bae0805784d0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3443,7 +3443,7 @@ Cell[BoxData[{
    3.945317980233737*^9}, 3.9453181525830603`*^9, {3.9453184512214603`*^9, 
    3.945318896598055*^9}},
  CellLabel->
-  "In[494]:=",ExpressionUUID->"7b02f4d0-d134-46cb-96ce-231af8d7083c"]
+  "In[580]:=",ExpressionUUID->"7b02f4d0-d134-46cb-96ce-231af8d7083c"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3482,12 +3482,12 @@ Cell[BoxData[{
     RowBox[{"T", ",", "mu", ",", "M", ",", "Delta"}], "]"}], "/.", 
    "greekRule"}], "/.", "derivativeRule2"}]}], "Input",
  CellChangeTimes->{{3.942659646503006*^9, 3.9426596554904995`*^9}, {
-  3.9426597070806293`*^9, 3.9426597097875576`*^9}, {3.9426606296800137`*^9, 
-  3.9426606325415897`*^9}, {3.942660673640747*^9, 3.9426606815150375`*^9}, {
-  3.945317946370542*^9, 3.9453179527405443`*^9}, {3.945318163132122*^9, 
-  3.945318168026582*^9}},
+   3.9426597070806293`*^9, 3.9426597097875576`*^9}, {3.9426606296800137`*^9, 
+   3.9426606325415897`*^9}, {3.942660673640747*^9, 3.9426606815150375`*^9}, {
+   3.945317946370542*^9, 3.9453179527405443`*^9}, {3.945318163132122*^9, 
+   3.945318168026582*^9}, 3.945343257259132*^9},
  CellLabel->
-  "In[271]:=",ExpressionUUID->"13218d8d-ab24-174e-8f39-0be55f0067f2"],
+  "In[582]:=",ExpressionUUID->"13218d8d-ab24-174e-8f39-0be55f0067f2"],
 
 Cell[BoxData[
  TemplateBox[{"\"(\"", 
@@ -3501,9 +3501,10 @@ Cell[BoxData[
    3.9426606331470623`*^9, 3.9426606818385677`*^9, {3.9453179322884283`*^9, 
    3.945317953377625*^9}, 3.945317984244783*^9, {3.9453181573758993`*^9, 
    3.945318168807283*^9}, 3.9453187155638533`*^9, 3.945318755637701*^9, {
-   3.945318890910583*^9, 3.945318901458708*^9}},
+   3.945318890910583*^9, 3.945318901458708*^9}, {3.9453432684235773`*^9, 
+   3.9453432832081413`*^9}},
  CellLabel->
-  "Out[271]=",ExpressionUUID->"fe414b59-ec1e-4472-bd15-c0e798bed112"],
+  "Out[582]=",ExpressionUUID->"03eb7ce2-9321-469f-83dd-18761100ac60"],
 
 Cell[BoxData[
  TemplateBox[{"\"(\"", 
@@ -3517,9 +3518,10 @@ Cell[BoxData[
    3.9426606331470623`*^9, 3.9426606818385677`*^9, {3.9453179322884283`*^9, 
    3.945317953377625*^9}, 3.945317984244783*^9, {3.9453181573758993`*^9, 
    3.945318168807283*^9}, 3.9453187155638533`*^9, 3.945318755637701*^9, {
-   3.945318890910583*^9, 3.945318901461019*^9}},
+   3.945318890910583*^9, 3.945318901458708*^9}, {3.9453432684235773`*^9, 
+   3.9453432832104692`*^9}},
  CellLabel->
-  "Out[272]=",ExpressionUUID->"e7525543-1c44-4804-bf63-10b2bc9a8077"],
+  "Out[583]=",ExpressionUUID->"1013cddd-9a26-4b61-8220-34af81ab3053"],
 
 Cell[BoxData[
  RowBox[{
@@ -3606,9 +3608,10 @@ Cell[BoxData[
    3.9426606331470623`*^9, 3.9426606818385677`*^9, {3.9453179322884283`*^9, 
    3.945317953377625*^9}, 3.945317984244783*^9, {3.9453181573758993`*^9, 
    3.945318168807283*^9}, 3.9453187155638533`*^9, 3.945318755637701*^9, {
-   3.945318890910583*^9, 3.945318901546049*^9}},
+   3.945318890910583*^9, 3.945318901458708*^9}, {3.9453432684235773`*^9, 
+   3.945343283239271*^9}},
  CellLabel->
-  "Out[273]=",ExpressionUUID->"7348da57-2a86-47f2-9c32-91b905a89fd7"],
+  "Out[584]=",ExpressionUUID->"c6fba929-fda8-4398-8bc5-4a82c3e7c7e9"],
 
 Cell[BoxData[
  RowBox[{
@@ -3719,9 +3722,10 @@ Cell[BoxData[
    3.9426606331470623`*^9, 3.9426606818385677`*^9, {3.9453179322884283`*^9, 
    3.945317953377625*^9}, 3.945317984244783*^9, {3.9453181573758993`*^9, 
    3.945318168807283*^9}, 3.9453187155638533`*^9, 3.945318755637701*^9, {
-   3.945318890910583*^9, 3.945318901640214*^9}},
+   3.945318890910583*^9, 3.945318901458708*^9}, {3.9453432684235773`*^9, 
+   3.9453432833462753`*^9}},
  CellLabel->
-  "Out[274]=",ExpressionUUID->"99314c36-b350-4e6a-a051-a15be9f83a2d"],
+  "Out[585]=",ExpressionUUID->"ce761e35-de9a-4938-bafd-a006ebe756ce"],
 
 Cell[BoxData[
  RowBox[{
@@ -3808,9 +3812,10 @@ Cell[BoxData[
    3.9426606331470623`*^9, 3.9426606818385677`*^9, {3.9453179322884283`*^9, 
    3.945317953377625*^9}, 3.945317984244783*^9, {3.9453181573758993`*^9, 
    3.945318168807283*^9}, 3.9453187155638533`*^9, 3.945318755637701*^9, {
-   3.945318890910583*^9, 3.9453189017263727`*^9}},
+   3.945318890910583*^9, 3.945318901458708*^9}, {3.9453432684235773`*^9, 
+   3.945343283432843*^9}},
  CellLabel->
-  "Out[275]=",ExpressionUUID->"9e4b9ca7-e85b-4803-8e1d-7a5a4abb0042"]
+  "Out[586]=",ExpressionUUID->"9abd0860-7a8e-4201-b5d9-160837867b4a"]
 }, Open  ]]
 }, Open  ]],
 
@@ -5050,7 +5055,230 @@ Cell[BoxData[
   "Out[377]=",ExpressionUUID->"7e70320a-9385-4af4-9cf8-57ee0faaed58"]
 }, Open  ]]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dev", "Title",
+ CellChangeTimes->{{3.94534369936773*^9, 
+  3.945343700658965*^9}},ExpressionUUID->"adf8bbee-cd0d-4981-97a4-\
+a29a2e2679d0"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CForm", "[", 
+  RowBox[{"c30", "[", 
+   RowBox[{"T", ",", "mu", ",", "M", ",", "Delta"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.945343435519834*^9, 3.945343452505981*^9}, {
+  3.945343638935174*^9, 3.9453436392212267`*^9}},
+ CellLabel->
+  "In[591]:=",ExpressionUUID->"1960b6a1-d5f4-43d3-b0ba-eda0cb6e1506"],
+
+Cell["\<\
+(-(Derivative(0,0,0,3)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(0,0,\
+2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta),3)*Power(Derivative(1,0,0,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta),3)) + 
+      3*Power(Derivative(0,0,1,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),5)*(\
+Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,0,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + \
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta)) + 
+      Power(Derivative(0,0,1,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),3)*(\
+Derivative(0,0,3,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,0,\
+1)(\[CapitalOmega]Eff)(T,mu,M,Delta),3) + 
+         3*Derivative(0,0,2,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + 
+         6*Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,\
+0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,0,2)(\[CapitalOmega]\
+Eff)(T,mu,M,Delta)*Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta) + 
+         3*Derivative(0,0,1,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,\
+0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta),2) + 
+         Derivative(0,0,0,3)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta),3) + 
+         6*Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*Derivative(1,0,1,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + 
+         6*Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*Derivative(1,0,1,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + 
+         6*Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,\
+0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,1,0)(\[CapitalOmega]\
+Eff)(T,mu,M,Delta)*Derivative(1,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta) - 
+         6*Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(0,\
+0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,1,0)(\[CapitalOmega]\
+Eff)(T,mu,M,Delta)*Derivative(2,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta) - 
+         6*Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(0,\
+0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,0,1)(\[CapitalOmega]\
+Eff)(T,mu,M,Delta)*Derivative(2,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)) - 
+      3*Power(Derivative(0,0,1,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),4)*(\
+Derivative(1,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,1,\
+0)(\[CapitalOmega]Eff)(T,mu,M,Delta),2) + 
+         Power(Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*\
+Derivative(1,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta) + 
+         Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*(2*Derivative(\
+1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,1,1)(\[CapitalOmega]\
+Eff)(T,mu,M,Delta) + \
+Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,0,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta)) + 
+         Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,\
+1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,1,0)(\[CapitalOmega]Eff)\
+(T,mu,M,Delta)) - 
+      3*Power(Derivative(0,0,1,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*(\
+Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta)*
+          (Derivative(0,0,3,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2) + 
+            Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*(2*\
+Derivative(0,0,2,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,0,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + \
+Derivative(0,0,1,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + 
+               Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*\
+Derivative(1,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta))) + 
+         Power(Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*
+          (Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,\
+0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta) - 2*Derivative(0,0,0,2)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,0,1)(\[CapitalOmega]Eff)(T,\
+mu,M,Delta)) + 
+         Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*(Derivative(0,\
+0,2,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,0,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta),3) + 
+            2*Derivative(0,0,1,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + 
+            Derivative(0,0,0,3)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(\
+1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta),2) - 
+            Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(\
+1,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta),2) - 
+            Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*Derivative(1,0,2,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) - 
+            2*Power(Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*\
+Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta))) - 
+      Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*(Power(Derivative(\
+0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*Derivative(0,0,3,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,1,0)(\[CapitalOmega]\
+Eff)(T,mu,M,Delta),3) + 
+         3*Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(0,\
+0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta),2)*
+          (Derivative(0,0,2,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,\
+0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta) - \
+Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,2,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta)) + 
+         3*Power(Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta),3)*\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*
+          (-(Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(\
+1,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)) + Derivative(0,0,0,2)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,0,1)(\[CapitalOmega]Eff)(T,\
+mu,M,Delta)) + 
+         3*Power(Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*\
+Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*
+          (Derivative(0,0,1,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2) + 
+            Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*(-2*\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,1,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + \
+Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta)))) + 
+      3*Derivative(0,0,1,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*(Derivative(0,0,\
+0,3)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(0,0,2,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta),2)*Power(Derivative(1,0,0,1)(\[CapitalOmega]\
+Eff)(T,mu,M,Delta),2)*Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta) + \
+
+         Derivative(0,0,1,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(0,0,\
+2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,0,1)(\[CapitalOmega]Eff)\
+(T,mu,M,Delta)*
+          (Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2) + \
+2*Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,\
+1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)) + 
+         Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*(Derivative(0,\
+0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta),2)*
+             (Derivative(0,0,3,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta) + Derivative(0,0,2,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,\
+mu,M,Delta)) - 
+            2*Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*\
+Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*
+             (-(Derivative(0,0,2,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Power(\
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)) + 
+               Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*(\
+Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,1,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + \
+Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,2,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta))) + 
+            Power(Derivative(0,0,2,0)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*(-\
+2*Power(Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2)*Derivative(1,\
+0,1,1)(\[CapitalOmega]Eff)(T,mu,M,Delta) + 
+               Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*\
+Derivative(1,0,1,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,0,1)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + 
+               Derivative(1,0,0,1)(\[CapitalOmega]Eff)(T,mu,M,Delta)*(-2*\
+Derivative(1,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(1,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta) + \
+Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(2,0,1,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta))))))/
+    (Power(Power(Derivative(0,0,1,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2) - \
+Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(0,0,2,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta),2)*
+      (-Power(Derivative(0,0,1,1)(\[CapitalOmega]Eff)(T,mu,M,Delta),2) + \
+Derivative(0,0,0,2)(\[CapitalOmega]Eff)(T,mu,M,Delta)*Derivative(0,0,2,0)(\
+\[CapitalOmega]Eff)(T,mu,M,Delta))) + \
+Derivative(3,0,0,0)(\[CapitalOmega]Eff)(T,mu,M,Delta)\
+\>", "Output",
+ CellChangeTimes->{3.945343453107976*^9, 3.945343639880506*^9},
+ CellLabel->
+  "Out[591]//CForm=",ExpressionUUID->"3573404f-cbac-409e-99a5-59f149fa9427"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"c10", "[", 
+  RowBox[{"T", ",", "mu", ",", "M", ",", "Delta"}], "]"}]], "Input",
+ CellLabel->
+  "In[588]:=",ExpressionUUID->"1edc67d6-8bb2-419f-a7d0-3b80f8cf2d4a"],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["\[CapitalOmega]Eff", 
+   TagBox[
+    RowBox[{"(", 
+     RowBox[{"1", ",", "0", ",", "0", ",", "0"}], ")"}],
+    Derivative],
+   MultilineFunction->None], "[", 
+  RowBox[{"T", ",", "mu", ",", "M", ",", "Delta"}], "]"}]], "Output",
+ CellChangeTimes->{3.94534346218596*^9},
+ CellLabel->
+  "Out[588]=",ExpressionUUID->"7eceb18b-8059-465d-9b40-1ea625f83fd2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"CForm", "[", 
+  RowBox[{"D", "[", 
+   RowBox[{
+    RowBox[{"f", "[", "x", "]"}], ",", "x"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9453434794289618`*^9, 3.9453434899482*^9}},
+ CellLabel->
+  "In[590]:=",ExpressionUUID->"8f15eb7d-2030-4581-ac2d-451c1a83c8fc"],
+
+Cell["Derivative(1)(f)(x)", "Output",
+ CellChangeTimes->{{3.945343486453862*^9, 3.945343490790238*^9}},
+ CellLabel->
+  "Out[590]//CForm=",ExpressionUUID->"1b555933-9d76-4555-a9fd-179cb2639e28"]
 }, Open  ]]
+}, Closed]]
 },
 WindowSize->{Full, Full},
 WindowMargins->{{Automatic, 115.5}, {Automatic, 0}},
@@ -5111,7 +5339,7 @@ Cell[51571, 1381, 181, 3, 32, "Item",ExpressionUUID->"4f7dd8b6-b5f6-4e42-9ea1-93
 Cell[CellGroupData[{
 Cell[51777, 1388, 1045, 28, 115, "Input",ExpressionUUID->"932eca1b-ac98-461a-b36e-b337b5e1ef38"],
 Cell[52825, 1418, 230, 4, 24, "Print",ExpressionUUID->"13bd8efd-b096-4005-bcf3-d5e81befe13c"],
-Cell[53058, 1424, 1156, 30, 86, "Output",ExpressionUUID->"cd35eda6-abe6-42ff-9456-fd6002b0b10c"],
+Cell[53058, 1424, 1156, 30, 63, "Output",ExpressionUUID->"cd35eda6-abe6-42ff-9456-fd6002b0b10c"],
 Cell[54217, 1456, 228, 4, 24, "Print",ExpressionUUID->"bbd36543-f2bf-48a7-ba9c-b622a39f43d1"],
 Cell[54448, 1462, 4651, 121, 63, "Output",ExpressionUUID->"0949e7b2-63fc-4d31-8e6d-eb55ee9aaa17"],
 Cell[59102, 1585, 4615, 120, 63, "Output",ExpressionUUID->"0245bb1a-b311-499e-bb6f-a256c529cd6f"]
@@ -5145,22 +5373,37 @@ Cell[110814, 2922, 22300, 523, 951, "Input",ExpressionUUID->"7b02f4d0-d134-46cb-
 Cell[CellGroupData[{
 Cell[133151, 3450, 163, 3, 32, "Item",ExpressionUUID->"7cb86926-7151-4627-9974-cb1347e79d6f"],
 Cell[CellGroupData[{
-Cell[133339, 3457, 1316, 32, 115, "Input",ExpressionUUID->"13218d8d-ab24-174e-8f39-0be55f0067f2"],
-Cell[134658, 3491, 718, 14, 35, "Output",ExpressionUUID->"fe414b59-ec1e-4472-bd15-c0e798bed112"],
-Cell[135379, 3507, 722, 14, 37, "Output",ExpressionUUID->"e7525543-1c44-4804-bf63-10b2bc9a8077"],
-Cell[136104, 3523, 3474, 87, 59, "Output",ExpressionUUID->"7348da57-2a86-47f2-9c32-91b905a89fd7"],
-Cell[139581, 3612, 4527, 111, 61, "Output",ExpressionUUID->"99314c36-b350-4e6a-a051-a15be9f83a2d"],
-Cell[144111, 3725, 3496, 87, 61, "Output",ExpressionUUID->"9e4b9ca7-e85b-4803-8e1d-7a5a4abb0042"]
+Cell[133339, 3457, 1342, 32, 115, "Input",ExpressionUUID->"13218d8d-ab24-174e-8f39-0be55f0067f2"],
+Cell[134684, 3491, 772, 15, 35, "Output",ExpressionUUID->"03eb7ce2-9321-469f-83dd-18761100ac60"],
+Cell[135459, 3508, 776, 15, 37, "Output",ExpressionUUID->"1013cddd-9a26-4b61-8220-34af81ab3053"],
+Cell[136238, 3525, 3526, 88, 59, "Output",ExpressionUUID->"c6fba929-fda8-4398-8bc5-4a82c3e7c7e9"],
+Cell[139767, 3615, 4581, 112, 61, "Output",ExpressionUUID->"ce761e35-de9a-4938-bafd-a006ebe756ce"],
+Cell[144351, 3729, 3546, 88, 61, "Output",ExpressionUUID->"9abd0860-7a8e-4201-b5d9-160837867b4a"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[147656, 3818, 170, 3, 32, "Item",ExpressionUUID->"a1a8fa92-e899-4ea7-ba6e-1d010c045a98"],
+Cell[147946, 3823, 170, 3, 32, "Item",ExpressionUUID->"a1a8fa92-e899-4ea7-ba6e-1d010c045a98"],
 Cell[CellGroupData[{
-Cell[147851, 3825, 383, 9, 30, "Input",ExpressionUUID->"c1c56b12-1b30-4217-862e-25dd80ac50ec"],
-Cell[148237, 3836, 52235, 1213, 269, "Output",ExpressionUUID->"7e70320a-9385-4af4-9cf8-57ee0faaed58"]
+Cell[148141, 3830, 383, 9, 30, "Input",ExpressionUUID->"c1c56b12-1b30-4217-862e-25dd80ac50ec"],
+Cell[148527, 3841, 52235, 1213, 269, "Output",ExpressionUUID->"7e70320a-9385-4af4-9cf8-57ee0faaed58"]
 }, Open  ]]
 }, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[200823, 5061, 145, 3, 98, "Title",ExpressionUUID->"adf8bbee-cd0d-4981-97a4-a29a2e2679d0"],
+Cell[CellGroupData[{
+Cell[200993, 5068, 337, 7, 30, "Input",ExpressionUUID->"1960b6a1-d5f4-43d3-b0ba-eda0cb6e1506"],
+Cell[201333, 5077, 10232, 162, 909, "Output",ExpressionUUID->"3573404f-cbac-409e-99a5-59f149fa9427"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[211602, 5244, 187, 4, 30, "Input",ExpressionUUID->"1edc67d6-8bb2-419f-a7d0-3b80f8cf2d4a"],
+Cell[211792, 5250, 395, 11, 34, "Output",ExpressionUUID->"7eceb18b-8059-465d-9b40-1ea625f83fd2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[212224, 5266, 289, 7, 30, "Input",ExpressionUUID->"8f15eb7d-2030-4581-ac2d-451c1a83c8fc"],
+Cell[212516, 5275, 193, 3, 45, "Output",ExpressionUUID->"1b555933-9d76-4555-a9fd-179cb2639e28"]
 }, Open  ]]
+}, Closed]]
 }
 ]
 *)
